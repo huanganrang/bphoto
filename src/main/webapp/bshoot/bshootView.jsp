@@ -1,0 +1,90 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="jb.model.Tbshoot" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<script type="text/javascript">
+	$(function() {
+		parent.$.messager.progress('close');		
+	});
+</script>
+<div class="easyui-layout" data-options="fit:true,border:false">
+	<div data-options="region:'center',border:false">
+		<table class="table table-hover table-condensed">
+				<tr>	
+					<th><%=Tbshoot.ALIAS_BS_TITLE%></th>	
+					<td>
+						${bshoot.bsTitle}							
+					</td>							
+					<th><%=Tbshoot.ALIAS_BS_TOPIC%></th>	
+					<td>
+						${bshoot.bsTopic}							
+					</td>							
+				</tr>		
+				<tr>	
+					<th><%=Tbshoot.ALIAS_BS_ICON%></th>	
+					<td>
+						${bshoot.bsIcon}							
+					</td>							
+					<th><%=Tbshoot.ALIAS_BS_STREAM%></th>	
+					<td>
+						${bshoot.bsStream}							
+					</td>							
+				</tr>		
+				<tr>	
+					<th><%=Tbshoot.ALIAS_BS_COLLECT%></th>	
+					<td>
+						${bshoot.bsCollect}							
+					</td>							
+					<th><%=Tbshoot.ALIAS_BS_PRAISE%></th>	
+					<td>
+						${bshoot.bsPraise}							
+					</td>							
+				</tr>		
+				<tr>	
+					<th><%=Tbshoot.ALIAS_BS_TYPE%></th>	
+					<td>
+						${bshoot.bsType}							
+					</td>							
+					<th><%=Tbshoot.ALIAS_BS_COMMENT%></th>	
+					<td>
+						${bshoot.bsComment}							
+					</td>							
+				</tr>		
+				<tr>	
+					<th><%=Tbshoot.ALIAS_USER_ID%></th>	
+					<td>
+						${bshoot.userId}							
+					</td>							
+					<th><%=Tbshoot.ALIAS_BS_DESCRIPTION%></th>	
+					<td>
+						${bshoot.bsDescription}							
+					</td>							
+				</tr>		
+				<tr>	
+					<th><%=Tbshoot.ALIAS_BS_REMARK%></th>	
+					<td>
+						${bshoot.bsRemark}							
+					</td>							
+					<th><%=Tbshoot.ALIAS_CREATE_DATETIME%></th>	
+					<td>
+						${bshoot.createDatetime}							
+					</td>							
+				</tr>		
+				<tr>	
+					<th><%=Tbshoot.ALIAS_UPDATE_DATETIME%></th>	
+					<td>
+						${bshoot.updateDatetime}							
+					</td>							
+					<th><%=Tbshoot.ALIAS_CREATE_PERSON%></th>	
+					<td>
+						${bshoot.createPerson}							
+					</td>							
+				</tr>		
+				<tr>	
+					<th><%=Tbshoot.ALIAS_UPDATE_PERSON%></th>	
+					<td>
+						${bshoot.updatePerson}							
+					</td>							
+				</tr>		
+		</table>
+	</div>
+</div>
