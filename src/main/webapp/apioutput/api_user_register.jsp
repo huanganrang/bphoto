@@ -62,7 +62,7 @@
 						<td><input name="areaCode" type="text" class="span2" value=""/></td>
 					</tr>
 					<tr>
-						<td align="right" style="width: 180px;"><label>headImage(头像)：</label></td>
+						<td align="right" style="width: 180px;"><label>headImageFile(头像)：</label></td>
 						<td><input name="headImageFile" type="file" class="span2" value=""/></td>
 					</tr>
 					<tr>

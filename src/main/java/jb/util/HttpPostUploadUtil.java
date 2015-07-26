@@ -24,15 +24,15 @@ public class HttpPostUploadUtil {
 	public static void main(String[] args) {
 		String filepath = "D:\\test\\a.jpg";
 		String filepath1 = "D:\\test\\a.html";
-		String urlStr = "http://127.0.0.1:8181/bshoot/api/bshootController/upload";
+		String urlStr = "http://121.43.103.238:8080/bshoot/api/apiUserController/register";
 		Map<String, String> textMap = new HashMap<String, String>();
-		textMap.put("bsTitle", "testname");      //主题
-		textMap.put("tokenId", "6A98C9F43BBE41ACBB3576F2F87572EA"); //token值
-		textMap.put("bsDescription", "我的地盘我做主");		//描述
-		Map<String, String> fileMap = new HashMap<String, String>();
-		fileMap.put("movies", filepath); //视频文件
-		fileMap.put("icons", filepath1); //视频文件中的一帧作为icon图标
-		String ret = formUpload(urlStr, textMap, fileMap);
+		textMap.put("name", "测试美拍12");      //主题
+		textMap.put("pwd", "1233"); //token值
+		//textMap.put("bsDescription", "我的地盘我做主");		//描述
+		//Map<String, String> fileMap = new HashMap<String, String>();
+		//fileMap.put("movies", filepath); //视频文件
+		//fileMap.put("icons", filepath1); //视频文件中的一帧作为icon图标
+		String ret = formUpload(urlStr, textMap, null);
 		System.out.println(ret);
 	}
 
