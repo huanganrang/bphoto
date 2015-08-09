@@ -59,6 +59,7 @@ public class UserServiceImpl implements UserServiceI {
 			throw new Exception("登录名已存在！");
 		} else {
 			Tuser u = new Tuser();
+			BeanUtils.copyProperties(user, u);
 			u.setId(UUID.randomUUID().toString());
 			u.setName(user.getName());
 			u.setPwd(MD5Util.md5(user.getPwd()));
