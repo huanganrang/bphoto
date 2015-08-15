@@ -116,7 +116,8 @@ public class BaseController {
 	protected void downloadTable(List<Colum> colums,DataGrid dg,HttpServletResponse response) throws SecurityException, NoSuchMethodException, IllegalArgumentException, IllegalAccessException, InvocationTargetException, IOException {
 		Iterator<Colum> it = colums.iterator();  
 		while(it.hasNext()) {  
-			if(it.next().isHidden()||"action".equals(it.next().getField()))
+			Colum c = it.next();
+			if(c.isHidden()||"action".equals(c.getField()))
 				it.remove();
 		}  
 		XSSFWorkbook xs=new XSSFWorkbook();
